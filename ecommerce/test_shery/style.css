@@ -41,22 +41,7 @@ html, body{
     position: relative;
 }
 
-#nav{
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Trebuchet MS';
-}
-#nav a{
-    color: #fff;
-    pointer-events: all;
-}
 
-#nav img{
-    height: 60px;
-}
 #nleft, #nright{
     color: #fff;
     display: flex;
