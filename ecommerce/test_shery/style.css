@@ -116,3 +116,115 @@ html, body{
     pointer-events: all;
 }
 
+
+
+/* BODY OF SITE */
+
+/* General styles */
+*{
+    text-decoration: none;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS';
+    background-image: url(/background.jpg);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.5em;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav .nav-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav .nav-links li a:hover {
+    color: #ff6347;
+}
+
+
+main {
+    padding: 40px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    color: white    ;
+    background: rgba(0, 2, 10, 0.841);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-card h2 {
+    padding: 10px;
+    margin: 0;
+}
+
+.product-card p {
+    padding: 0 10px 10px;
+    margin: 0;
+    color: #888;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
